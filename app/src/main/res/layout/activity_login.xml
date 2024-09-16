@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login VacunAR"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo"
+        android:contentDescription="Logo VacunAR"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <!-- Campo matrícula -->
+    <EditText
+        android:id="@+id/etMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#C0C0C0"
+        android:hint="Ingrese su matrícula"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/black" />
+
+    <!-- Campo clave -->
+    <EditText
+        android:id="@+id/etClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#C0C0C0"
+        android:hint="Ingrese su clave"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Botón ingresar -->
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INGRESAR"
+        android:textColor="#FFF"
+        android:background="#808080"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_cambiar_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnIngresar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="@color/teal_200"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btn_fingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:layout_below="@id/tv_cambiar_password"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="87dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_fingerprint" />
+</LinearLayout>
